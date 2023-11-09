@@ -1,0 +1,11 @@
+(1) 输出 Student building，因为启动main时进行Homework类的加载，执行语句 static Student s = new Student()，
+并随着构造器的执行而执行构造代码块
+(2) 输出 Student constructor，执行完Student类的构造代码块后执行构造器内的输出语句
+(3) 输出 main，回到main方法执行输出语句
+(4) 输出 Student building，由于main中语句：Person p = new Person("刘备")，进行Person类的加载，
+进行Person类的静态变量初始化：static Student s = new Student()，然后同步骤(1)、(2)进行语句执行
+(5) 输出 Student constructor，原因同步骤(4)
+(6) 输出 Person building，完成Person类加载后，回到main方法，然后开始创建Person类，由于构造代码块先于构造器内部的
+语句执行，故先打印出构造代码块中的语句
+(7) 输出 Person constructor，构造代码块语句执行完成后，继续执行构造器中的语句
+(8) 输出 刘备，回到main方法后，执行输出语句，由于"刘备"是构造器传参，所以会覆盖掉成员变量显示赋值和构造代码块显示赋值
