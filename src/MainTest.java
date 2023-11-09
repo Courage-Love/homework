@@ -31,7 +31,7 @@ class Dog{
     int age;
     String color;
     public void bark(){
-        System.out.println("汪汪汪!");
+        System.out.println("汪汪汪我!");
     }
 
     @Override
