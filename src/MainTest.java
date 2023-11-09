@@ -32,6 +32,8 @@ class Dog{
     String color;
     public void bark(){
         System.out.println("我汪我!");
+        System.out.println("我汪我!");
+        System.out.println("手动阀手动阀十分");
     }
 
     @Override
