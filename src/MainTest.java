@@ -20,6 +20,7 @@ class MainTest {
         dog1.name = "萨摩耶";
         dog1.color = "白色";
         System.out.println(dog1);
+        System.out.println(dog1);
     }
 
 }
