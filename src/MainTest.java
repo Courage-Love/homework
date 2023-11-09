@@ -33,6 +33,7 @@ class Dog{
     public void bark(){
         System.out.println("我汪我!");
         System.out.println("我汪我!");
+        System.out.println("手动阀手动打发士大夫阀十分");
         System.out.println("手动阀手动阀十分");
         System.out.println("手啊沙发沙发动阀十分");
     }
